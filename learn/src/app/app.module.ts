@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
-import { PagesRoutingModule } from './pages/pages-routing.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+import { PagesModule } from './pages/pages.module';
 import { MaterialModule } from './material/material.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 
 
 @NgModule({
@@ -13,9 +15,8 @@ import { MaterialModule } from './material/material.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    PagesRoutingModule,
+    PagesModule,
     MaterialModule
   ],
   providers: [
