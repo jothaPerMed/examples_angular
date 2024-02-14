@@ -1,20 +1,20 @@
 <mat-drawer-container class="sidenav-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
     <p>Menu</p>
-    <button (click)="toHomePage()" mat-raised-button class="sidenav-content-button">Home</button>
-    <button (click)="toProductosPage()" mat-raised-button class="sidenav-content-button">Productos</button>
+    <button (click)="toHomePage(); toogleMenu();drawer.toggle();toogleLoading()" mat-raised-button class="sidenav-content-button">Home</button>
+    <button (click)="toProductosPage(); toogleMenu();drawer.toggle();toogleLoading()" mat-raised-button class="sidenav-content-button">Productos</button>
   </mat-drawer>
 
   <div class="sidenav-content mat-background">
-    <button type="button" class="sidenav-content-button"mat-button (click)="toogleMenu(); drawer.toggle(); toogleLoading(); ">
+    <button type="button" class="primary"mat-button (click)="toogleMenu(); drawer.toggle(); toogleLoading(); ">
       {{ this.messageMenu }}
     </button>
     <mat-divider></mat-divider>
     <div *ngIf="currentPage == 'home'" class="mat-background">
-      <app-home class="mat-background"></app-home>
+      <app-home class="primary"></app-home>
     </div>
     <div *ngIf="currentPage == 'productos'" class="mat-background">
-      <app-producto class="mat-background"></app-producto>
+      <app-producto class="primary"></app-producto>
     </div>
   </div>
   <app-loading *ngIf="isLoading"></app-loading>
