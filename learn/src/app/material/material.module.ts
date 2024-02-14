@@ -18,12 +18,34 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+
 
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatProgressSpinnerModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatDividerModule,
   ],
   exports: [
     MatAutocompleteModule,
@@ -42,7 +64,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatSnackBarModule,
     MatToolbarModule,
     BrowserModule,
-    BrowserAnimationsModule
-  ]
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatDividerModule,
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}

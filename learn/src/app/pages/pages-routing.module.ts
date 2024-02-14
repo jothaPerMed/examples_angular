@@ -8,9 +8,8 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: HomeComponent },
-
-      // { path: '**', redirectTo: 'login' },
+      { path: 'home', component: HomeComponent },
+      { path: '**', redirectTo: 'error404-page' },
     ],
   },
   {

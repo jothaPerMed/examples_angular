@@ -1,0 +1,16 @@
+.sidenav {
+  display: block;
+  margin: 15px 15px;
+  width: 150px;
+}
+.sidenav-content-button{
+  margin: 10px 10px;
+}
+
+.sidenav-container {
+  display: inline;
+}
+
+.sidenav-content {
+  display: inline;
+}

@@ -16,8 +16,9 @@ import { PagesRoutingModule } from './pages/pages-routing.module';
   ],
   imports: [
     AppRoutingModule,
+    PagesRoutingModule,
     PagesModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [
     provideAnimationsAsync()
