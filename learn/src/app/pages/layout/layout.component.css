@@ -2,9 +2,13 @@
   display: block;
   margin: 15px 15px;
   width: 150px;
+  height: 100vh;
 }
 .sidenav-content-button{
   margin: 10px 10px;
+}
+.mat-drawer-container {
+  position: inherit;
 }
 
 .sidenav-container {

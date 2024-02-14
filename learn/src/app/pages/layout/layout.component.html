@@ -5,16 +5,16 @@
     <button (click)="toProductosPage(); toogleMenu();drawer.toggle();toogleLoading()" mat-raised-button class="sidenav-content-button">Productos</button>
   </mat-drawer>
 
-  <div class="sidenav-content mat-background">
-    <button type="button" class="primary"mat-button (click)="toogleMenu(); drawer.toggle(); toogleLoading(); ">
+  <div class="sidenav-content">
+    <button type="sidenav-content-button" mat-button (click)="toogleMenu(); drawer.toggle(); toogleLoading(); ">
       {{ this.messageMenu }}
     </button>
     <mat-divider></mat-divider>
     <div *ngIf="currentPage == 'home'" class="mat-background">
-      <app-home class="primary"></app-home>
+      <app-home></app-home>
     </div>
     <div *ngIf="currentPage == 'productos'" class="mat-background">
-      <app-producto class="primary"></app-producto>
+      <app-producto></app-producto>
     </div>
   </div>
   <app-loading *ngIf="isLoading"></app-loading>
